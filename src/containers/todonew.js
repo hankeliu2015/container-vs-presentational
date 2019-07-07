@@ -12,16 +12,18 @@ class TodoNew extends Component {
     this.setState({ [name]: value })
   }
 
-  submitForm = (e) => {
+  handleFormSubmission = (e) => {
     e.preventDefault();
-    
+
+    this.props.createTodo(this.state)
+    this.props.history.push('/')
   }
 
   render() {
     return(
       <div>
         <h1>Add A ToDo!</h1>
-        <form onSubmit={this.submitForm}>
+        <form onSubmit={this.handleFormSubmission}>
           <label>Content: </label><input type='text' name='content' value={this.state.content} onChange={this.handleChange}/><br />
           <label>Task completed?</label><input type='checkbox' name='completed' value={this.state.completed}onChange={this.handleChange}/><br />
           <input type='submit' value='Add ToDo'/>

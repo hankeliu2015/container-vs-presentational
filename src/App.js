@@ -15,6 +15,10 @@ class App extends Component {
     ]
   }
 
+  createTodo = (obj) => {
+    this.setState({todos: [...this.state.todos, obj]})
+  }
+
   render() {
     return (
       <div>

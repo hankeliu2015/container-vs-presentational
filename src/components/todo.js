@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 
 class Todo extends Component {
   render() {
-    return(<li>{this.props.content}</li>)
+    return (
+      <li>
+        content: {this.props.content}<br />
+        completed: {this.props.completed ? 'yes' : 'no'}
+      </li>
+    )
   }
 }
 

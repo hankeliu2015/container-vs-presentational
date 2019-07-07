@@ -8,7 +8,11 @@ import TodoNew from './containers/todonew'
 
 class App extends Component {
   state = {
-    todos: [{content: 'finish Building App', completed: true}, {content: 'eat breakfast', completed: false}, {content: 'do laundry', completed: false}]
+    todos: [
+      {content: 'finish bilding app', completed: true}, 
+      {content: 'eat breakfast', completed: false}, 
+      {content: 'do laundry', completed: false}
+    ]
   }
 
   render() {

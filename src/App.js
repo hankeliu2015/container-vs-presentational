@@ -9,8 +9,8 @@ import TodoNew from './containers/todonew'
 class App extends Component {
   state = {
     todos: [
-      {content: 'finish bilding app', completed: true}, 
-      {content: 'eat breakfast', completed: false}, 
+      {content: 'finish bilding app', completed: true},
+      {content: 'eat breakfast', completed: false},
       {content: 'do laundry', completed: false}
     ]
   }
@@ -20,6 +20,7 @@ class App extends Component {
   }
 
   render() {
+
     return (
       <div>
         <Router>
@@ -31,7 +32,7 @@ class App extends Component {
             </Switch>
           </div>
         </Router>
-      
+
       </div>
      );
   }
